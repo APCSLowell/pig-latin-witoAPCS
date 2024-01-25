@@ -42,17 +42,14 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == -1) {
 		    return sWord + "ay";
 	    }
-	    if(sWord.substring(0,2).equals("qu")){
+	    else if(sWord.substring(0,2).equals("qu")){
 	             return sWord.substring(2,sWord.length()) + "quay";
 	    }
-	    if(findFirstVowel(sWord) == 0){
+	    else if(findFirstVowel(sWord) == 0){
             	    return sWord + "way";
 	    }
-	    if(findFirstVowel(sWord)!=0){
-	            return sWord.substring(1,sWord.length()) + sWord.substring(0,1) + "ay";
-	    }
 	    else {
-		return "ERROR!";
+	            return sWord.substring(1,sWord.length()) + sWord.substring(0,1) + "ay";
 	    }
     }
 }//end PigLatin class
