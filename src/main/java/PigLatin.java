@@ -49,7 +49,8 @@ public class PigLatin {
             	    return sWord + "way";
 	    }
 	    else {
-	            return sWord.substring(1,findFirstVowel(sWord)) + sWord.substring(0,1) + "ay";
+		    //moves all leading vowels
+	            return sWord.substring(firstFindVowel(sWord), sWord.length()) + sWord.substring(0,findFirstVowel(sWord)) + "ay";
 	    }
     }
 }//end PigLatin class
