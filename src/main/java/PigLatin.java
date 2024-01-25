@@ -42,13 +42,13 @@ public class PigLatin {
 	    if(findFirstVowel(sWord) == -1) {
 		    return sWord + "ay";
 	    }
-	    else if(sWord.substring(0,2).equals("qu")){
+	    if(sWord.substring(0,2).equals("qu")){
 	             return sWord.substring(2,sWord.substring.length()) + "quay";
 	    }
-	    else if(findFirstVowel(sWord) == 0){
+	    if(findFirstVowel(sWord) == 0){
             	    return sWord + "way";
 	    }
-	    else if(findFirstVowel(sWord!=0){
+	    if(findFirstVowel(sWord!=0){
 	            return sWord.substring(1,sWord.length()) + sWord.substring;
 	    }
 	    else {
